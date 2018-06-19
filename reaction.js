@@ -60,8 +60,8 @@ function change() {
     startTime = new Date().getTime();
 
     if (steps < count - 1) {
-        myObject.style.top = getRndInteger(300, screen.height - 500).toString() + "px";
-        myObject.style.left = getRndInteger(300, screen.width - 500).toString() + "px";
+        myObject.style.top = getRndInteger(200, window.innerHeight - 500).toString() + "px";
+        myObject.style.left = getRndInteger(200, window.innerWidth - 500).toString() + "px";
 
         heightWidth = Math.floor(getRndInteger(15, 300)).toString() + "px";
         myObject.style.height = heightWidth;
