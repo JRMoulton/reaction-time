@@ -30,15 +30,16 @@ function getAvg(myArray) {
     }) / myArray.length;
 }
 
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
 function getInput() {
     count = myInput.value;
     if (count % 1 != 0) {
         myInput.value = "";
         myInput.placeholder = "Enter an integer";
     } else {
-        myInput.value = "";
-        myInput.style.height = "0px";
-
         body.removeChild(myInput);
         body.removeChild(mySubmit);
 
@@ -51,11 +52,6 @@ function getInput() {
         myObject.style.top = getRndInteger(300, screen.height - 500).toString() + "px";
         myObject.style.left = getRndInteger(300, screen.width - 500).toString() + "px";
     }
-}
-
-
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function change() {
