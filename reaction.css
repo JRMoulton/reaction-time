@@ -1,0 +1,14 @@
+#object {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border: none;
+    top: 100px;
+    left: 50px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
